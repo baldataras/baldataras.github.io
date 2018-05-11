@@ -1,4 +1,10 @@
 $(function(){
+	$( document ).ready(function() {
+    	$(".service.notactive").removeClass('notactive')
+    	$(".service").animate({
+			width: '210px'
+		},1000);
+	});
 	$(".button_open").click(function() {
 		$(".modal").addClass('active')
 		$(".modal").animate({
