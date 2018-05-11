@@ -46,6 +46,11 @@ header{
 	bottom: 0;
 }
 
+a{
+	text-decoration: none;
+	color: black;
+}
+
 .top_left{
 	margin-left: 2%;
 	display: flex;
