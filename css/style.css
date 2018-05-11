@@ -233,3 +233,13 @@ footer{
 	margin: center;
 	text-align: center;
 }
+
+.service{
+	background-color: #ffffff70;
+	position: absolute;
+	z-index: 20000;
+	width: 200px;
+	padding: 10px;
+	left: 10px;
+	top: 15%;
+}
