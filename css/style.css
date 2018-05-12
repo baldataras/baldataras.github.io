@@ -33,7 +33,7 @@ header{
 	margin-top: 0;
 	left: 0;
 	width: 100%;
-	height: 10%;
+	height: 70px;
 	background: #0000009e;
 	padding: 10px;
 	display: flex;
@@ -238,21 +238,77 @@ footer{
 	text-align: center;
 }
 
-.service.notactive{
-	display: none;
-}
-
-.service{
-	display: block;
+.serv{
 	background-color: #ffffff70;
 	position: absolute;
 	z-index: 20000;
 	width: 0px;
 	padding: 10px;
-	left: 10px;
-	top: 15.1%;
+	height: 220px;
 }
 
-.service h2{
+.serv h2{
 	width: 200px;
 }
+
+.service.notactive{
+	display: none;
+}
+
+.service{
+	display: flex;
+	left: 20px;
+	top: 106px;
+}
+
+.service_two.notactive{
+	display: none;
+}
+
+.service_two{
+	display: flex;
+	top: 356px;
+	left: 265px;
+}
+
+.service_three.notactive{
+	display: none;
+}
+
+.service_three{
+	display: flex;
+	top: 106px;
+	left: 510px;
+}
+
+.service_four.notactive{
+	display: none;
+}
+
+.service_four{
+	display: flex;
+	top: 356px;
+	left: 755px;
+}
+
+.service_five.notactive{
+	display: none;
+}
+
+.service_five{
+	display: flex;
+	top: 106px;
+	left: 1000px;
+}
+
+.lp{
+	width: 200px;
+}
+
+.arrow{
+	position: absolute; 
+	z-index: 100000; 
+	margin-left: 210px;
+	transform: rotate(0deg);
+}
+

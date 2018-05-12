@@ -1,9 +1,45 @@
 $(function(){
+	function pageloadone(){
+		$(".service_two.notactive").removeClass('notactive')
+    	$(".service_two").animate({
+			width: '210px'
+		},1000);
+	}
+	function pageloadtwo(){
+		$(".service_three.notactive").removeClass('notactive')
+    	$(".service_three").animate({
+			width: '210px'
+		},1000);
+	}
+	function pageloadthree(){
+		$(".service_four.notactive").removeClass('notactive')
+    	$(".service_four").animate({
+			width: '210px'
+		},1000);
+	}
+	function pageloadfour(){
+		$(".service_five.notactive").removeClass('notactive')
+    	$(".service_five").animate({
+			width: '210px'
+		},1000);
+	}
 	$( document ).ready(function() {
     	$(".service.notactive").removeClass('notactive')
     	$(".service").animate({
 			width: '210px'
 		},1000);
+		setTimeout(function(){
+			pageloadone();
+		},1000);
+		setTimeout(function(){
+			pageloadtwo();
+		},2000);
+		setTimeout(function(){
+			pageloadthree();
+		},3000);
+		setTimeout(function(){
+			pageloadfour();
+		},4000);
 	});
 	$(".button_open").click(function() {
 		$(".modal").addClass('active')
