@@ -110,6 +110,21 @@ a{
 .top_main{
 	margin: center;
 	z-index: 2;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.content{
+	width: 100%;
+	z-index: 2;
+	display: flex;
+	-webkit-justify-content: space-evenly;
+	        justify-content: space-evenly;
 }
 
 .web{

@@ -30,16 +30,16 @@ $(function(){
 		},1000);
 		setTimeout(function(){
 			pageloadone();
-		},1000);
+		},1100);
 		setTimeout(function(){
 			pageloadtwo();
-		},2000);
+		},2200);
 		setTimeout(function(){
 			pageloadthree();
-		},3000);
+		},3300);
 		setTimeout(function(){
 			pageloadfour();
-		},4000);
+		},4400);
 	});
 	$(".button_open").click(function() {
 		$(".modal").addClass('active')
