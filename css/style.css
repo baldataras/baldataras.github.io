@@ -246,6 +246,10 @@ footer{
 	width: 0px;
 	padding: 10px;
 	height: 220px;
+	box-shadow:
+	-webkit-box-shadow: 14px 14px 39px 0px rgba(0,0,0,1);
+-moz-box-shadow: 14px 14px 39px 0px rgba(0,0,0,1);
+box-shadow: 14px 14px 39px 0px rgba(0,0,0,1);
 }
 
 .serv h2{
