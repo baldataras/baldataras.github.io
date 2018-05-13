@@ -165,20 +165,6 @@ a{
 }*/
 
 .modal{
-	position: fixed;
-	right: 0;
-	width: 15%;
-	height: 0px;
-	bottom: 0;
-	display: flex;
-	-webkit-justify-content: center;
-	        justify-content: center;
-	-webkit-align-items: center;
-	        align-items: center;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	background-color: #4976907d;
 	display: none;
 }
 
@@ -188,7 +174,7 @@ a{
 	width: 15%;
 	height: 0px;
 	top: 13%;
-	z-index: 100;
+	z-index: 20001;
 	display: flex;
 	-webkit-justify-content: center;
 	        justify-content: center;
