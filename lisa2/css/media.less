@@ -1,0 +1,276 @@
+@media (max-width:992px) {
+	section {
+		font-size: 10px;
+		nav {
+			align-items: center;
+			a {
+				font-size: 2.5vh;
+			}
+		}
+		&.banner {
+			min-height: 8em;
+			padding: 15vh 1vh 6vh 1vh;
+			&.active {
+				.container {
+					h1 {
+						font-size: 10vh;
+						letter-spacing: 2vh;
+						line-height: 1em;
+					}
+					h2 {
+						font-size: 6vh;
+						line-height: 8vh;
+
+					}
+					.cool {
+						font-size: 6vh;
+					}
+				}
+			}
+		}
+	}
+	footer {
+		font-size: 10px;
+		.container {
+			display: flex;
+			flex-direction: column;
+			.left,
+			.right {
+				width: 100%;
+				text-align: center;
+				.social {
+					text-align: center;
+					a {
+						&:first-child {
+							padding: 0 .7em;
+						}
+					}
+				}
+			}
+			.left {
+				order: 1;
+			}
+			.right {
+				padding-left: 0;
+				order: 0;
+				h2 {
+					font-size: 3.7em;
+				}
+				form {
+					width: 100%;
+					max-width: 50em;
+					margin: auto;
+					display: block;
+					.wrap {
+						display: block;
+						div {
+							display: block;
+							width: 100%;
+
+							padding-right: 0;
+							margin: 0 auto 1.5em auto;
+							border: 1px solid transparent;
+							input {
+								width: 100%;
+								margin: auto;
+								&:first-child {
+									margin: 1.0em auto;
+								}
+							}
+						}
+					}
+					textarea {
+						width: 100%;
+						height: 7em;
+					}
+					button {
+						margin: 1em auto 3em auto;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.copyright_and_author {
+		text-align: center;
+	}
+}
+
+@media (max-width:768px) {
+	header {
+		display:  inline-block;
+	}
+	section {
+		&.banner {
+			.back_face {
+				transition:0s;
+				transform: scale(1);
+				opacity: 1;
+			}
+			nav {
+				position: fixed;
+				display: block;
+				width: 100%;
+				height: 210px;
+				top: -26%;
+				z-index: 4;
+				background: #f2f2f2;
+				padding:6em 1.5em; 
+				transition: .7s;
+				box-shadow: 0px 3px 6px -5px #000000;
+				&.active {
+					top: 0;
+					transition-delay: 0s;
+				}
+				a {
+					display: block;
+					width: 100%;
+					max-width: 200px;
+					text-align: center;
+					color: #000;
+					transition-delay: 0s;
+					transition: 0s;
+					margin: .4em auto;
+					font-size: 19px;
+				}
+			}
+			&.active {
+				.back_face {
+					transition:0s;
+					transform: scale(1);
+					opacity: 1;
+				}
+				nav {
+					a {
+						&:nth-child(1),&:nth-child(2), &:nth-child(3){
+							transition-delay: 0s;
+							transition: 0s;  
+						}
+					}
+				}
+				.container {
+					h1 {
+						font-size: 8em;
+						letter-spacing: .3em;
+						transition: 2s;
+						line-height: 6vh;
+					}
+					h2 {
+						font-size: 5em;
+						line-height: 1.5em;
+					}
+					.cool {
+						font-size: 4em;
+					}
+				}
+				.container {
+					h1 {
+						transition:0s;
+					}
+				}
+
+			}
+
+
+			&.portfolio {
+				.container {
+					.gallery {
+						display: inline-block;
+						vertical-align: top;
+						text-align: center;
+						div {
+							display: inline-block;
+							vertical-align: top;
+						}
+					}
+				}
+			}
+			&.works {
+				.slider1 {
+					padding: 4em 2em 0 2em;
+					width: 100%;
+					.slick-arrow {
+						display: none;
+					}
+					.slick-dots {
+						padding: 3em;
+					}
+				}
+				.col {
+					img {
+						height: auto;
+						max-height: 100%;
+						min-height: auto;
+
+					}
+				}
+			}
+			&.about_us {
+				.container {
+					.description {
+						text-align: center;
+					}
+				}
+			}
+		}
+		&.works  {
+			.slider1 {
+				padding: 4em 1.5em 0 1.5em;
+			}
+			.col  {
+				img {
+					min-height: auto;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width:500px) {
+	section {
+		font-size: 9px;
+		&.works {
+			.col {
+				// width: 100% !important;
+			}
+		}
+	}
+}
+
+
+@media (max-width:448px) {
+	section {
+		&.portfolio {
+			.container {
+				.gallery {
+					div {
+						margin-bottom: 1em;
+						img {
+							width: 100%;
+							max-width: 30em;
+							height: 16em;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width:400px) {
+	section {
+		font-size: 8px;
+		&.banner {
+			&.active {
+				.container {
+					h1 {
+						font-size: 7.5em;
+						letter-spacing: .3em;
+						line-height: 5vh;
+					}
+				}
+			}
+		}
+	}
+}
