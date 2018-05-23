@@ -1039,10 +1039,17 @@ html {
 }
 
 .log_body {
+    overflow-x: hidden;
+    overflow-y: hidden;
     background-image: url(../img/back_nat.jpg);
     width: 100%;
     height: 100%;
     .log_in {
+        .lh {
+            top: -50%;
+            position: relative;
+            margin-bottom: 20px;
+        }
         input {
             transition: 1s;
             border: 0px solid;
@@ -1051,16 +1058,17 @@ html {
             width: 400px;
             height: 50px;
             padding: 10px;
-            margin-top: 10px;
+            margin-bottom: 10px;
             position: relative;
-        }
-        .lf {
             top: -50%;
             left: -50%;
         }
-        .ls {
-            top: -50%;
-            right: -50%;
+
+        .but {
+            transition: 1s;
+            top: 50%;
+            left: 50%;
+            position: relative;
         }
 
         &.active {
@@ -1084,6 +1092,43 @@ html {
                     color: gold;
                 }
             }
+            .lh {
+                top: 0px;
+                position: relative;
+                transition: 1s;
+                font-size: 30px;
+            }
+            .but {
+                margin-top: 15px;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                position: relative;
+                text-transform: uppercase;
+                background: #e69f2e;
+                border: 1px solid transparent;
+                color: #fff;
+                font-family: FreesiaUPC;
+                border-radius: 5px;
+                padding: .2em 2.5em;
+                display: block;
+                font-size: 1.5em;
+                cursor: pointer;
+                letter-spacing: .15em;
+                &:hover {
+                    transition: 0.1s;
+                    box-shadow: 0px 0px 20px 1px #e69f2e;
+                }
+                &:active {
+                    transition: 0.1s;
+                    border-color: #e69f2e;
+                    color: #e69f2e;
+                    background: transparent;
+                    box-shadow: inset 0px 0px 26px -3px #e69f2e;
+                }
+            }
+
         }
     }
 
