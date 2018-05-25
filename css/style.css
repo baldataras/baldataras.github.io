@@ -1084,11 +1084,50 @@ html {
   width: 100%;
 }
 .log_body {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  background-image: url(../img/back_nat.jpg);
+  overflow: hidden;
   width: 100%;
   height: 100%;
+}
+.log_body .back_face {
+  transform: scale(1.2);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 0;
+  object-fit: cover;
+  transition: 1.5s;
+}
+.log_body.active .back_face {
+  transition: transform 1.5s;
+  transform: scale(1);
+}
+.log_body.active::before {
+  background: rgba(0, 0, 0, 0.62);
+}
+.log_body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+  background: #000000d6;
+  transition: 3s;
+}
+.log_body .log_in {
+  position: absolute;
+  z-index: 2;
 }
 .log_body .log_in .lh {
   top: -50%;

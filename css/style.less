@@ -1039,17 +1039,54 @@ html {
 }
 
 .log_body {
-    overflow-x: hidden;
-    overflow-y: hidden;
-    background-image: url(../img/back_nat.jpg);
+    overflow: hidden;
     width: 100%;
     height: 100%;
+    .back_face {
+        transform: scale(1.2);
+        .abs(fixed);
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: 0;
+        object-fit: cover;
+        transition: 1.5s;
+    }
+    &.active {
+        .back_face {
+            transition: transform 1.5s;
+            transform: scale(1.0);
+        }
+        &::before{
+            background: rgba(0, 0, 0, 0.62);
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        display: block;
+        z-index: 1;
+        background: #000000d6;
+        transition: 3s;
+    }
+
     .log_in {
+        position: absolute;
+        z-index: 2;
         .lh {
             top: -50%;
             position: relative;
             margin-bottom: 20px;
         }
+
         input {
             transition: 1s;
             border: 0px solid;

@@ -10,6 +10,10 @@ $(function () {
     $(document).ready(function () {
         $('.log_in').addClass('active')
     });
+    
+    $(document).ready(function () {
+        $('.log_body').addClass('active')
+    });
 
     setTimeout(function () {
         $('.banner').addClass('active');
