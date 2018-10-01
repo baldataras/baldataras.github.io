@@ -1,7 +1,54 @@
-.hh{
-    font-family: 'K2D', sans-serif;
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
-.heads{
+.hh {
+    font-family: 'K2D', sans-serif;
+    margin-left: 10px;
+}
+
+.heads {
     color: tomato;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#0000007a;
+}
+
+.headan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.about_us{
+    height: 100%;
+    background-image: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about_text{
+    -webkit-clip-path: polygon(0 0, 47% 0, 35% 100%, 0% 100%);
+clip-path: polygon(0 0, 47% 0, 35% 100%, 0% 100%);
+    background-color: black;
+    color: white;
+    padding: 40px;
+    padding-bottom: 100px;
+    padding-top: 60px;
+}
+
+.about_text p{
+    width: 35%;
 }
