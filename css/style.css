@@ -8,6 +8,7 @@
 .hh {
     font-family: 'K2D', sans-serif;
     margin-left: 10px;
+    color: white;
 }
 
 .heads {
@@ -20,6 +21,9 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color:#0000007a;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
 }
 
 .headan{
@@ -34,7 +38,7 @@ header {
     height: 100%;
     background-image: url(../img/background.jpg);
     background-attachment: fixed;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -42,13 +46,22 @@ header {
 .about_text{
     -webkit-clip-path: polygon(0 0, 47% 0, 35% 100%, 0% 100%);
 clip-path: polygon(0 0, 47% 0, 35% 100%, 0% 100%);
-    background-color: black;
+    background-color: #433036;
     color: white;
     padding: 40px;
     padding-bottom: 100px;
     padding-top: 60px;
+    padding-right: 15%;
 }
 
 .about_text p{
+    margin-top: 20px;
     width: 35%;
+}
+
+.line{
+    width: 60px;
+    height: 3px;
+    margin-top: 10px;
+    background-color: black;
 }
