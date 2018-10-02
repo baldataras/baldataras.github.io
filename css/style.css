@@ -2,13 +2,13 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
 }
 
 .hh {
     font-family: 'K2D', sans-serif;
     margin-left: 10px;
     color: white;
+    font-size: 40px;
 }
 
 .heads {
@@ -20,7 +20,7 @@ header {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    background-color:#0000007a;
+    /* background-color:#0000007a; */
     position: fixed;
     z-index: 100;
     width: 100%;
@@ -34,6 +34,15 @@ header {
     width: 50%;
 }
 
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+
 .about_us{
     height: 100%;
     background-image: url(../img/background.jpg);
@@ -41,6 +50,7 @@ header {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
 }
 
 .about_text{
@@ -52,6 +62,13 @@ clip-path: polygon(0 0, 47% 0, 35% 100%, 0% 100%);
     padding-bottom: 100px;
     padding-top: 60px;
     padding-right: 15%;
+    height: 100%;
+    
+}
+
+.about{
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .about_text p{
@@ -62,6 +79,26 @@ clip-path: polygon(0 0, 47% 0, 35% 100%, 0% 100%);
 .line{
     width: 60px;
     height: 3px;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: black;
 }
+
+.read_button{
+    margin-top: 50px;
+    width: 300px;
+    height: 50px;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.read_button:hover{
+    background-color: white;
+    color: tomato;
+    transition: 0.15s;
+}
+
