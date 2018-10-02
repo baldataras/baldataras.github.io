@@ -26,7 +26,7 @@ header {
     width: 100%;
 }
 
-.headan{
+.headan {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,16 +34,16 @@ header {
     width: 50%;
 }
 
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     height: 100%;
 }
 
 
-.about_us{
+.about_us {
     height: 100%;
     background-image: url(../img/background.jpg);
     background-attachment: fixed;
@@ -53,9 +53,9 @@ body{
     height: 100%;
 }
 
-.about_text{
+.about_text {
     -webkit-clip-path: polygon(0 0, 47% 0, 35% 100%, 0% 100%);
-clip-path: polygon(0 0, 47% 0, 35% 100%, 0% 100%);
+    clip-path: polygon(0 0, 47% 0, 35% 100%, 0% 100%);
     background-color: #433036;
     color: white;
     padding: 40px;
@@ -63,27 +63,27 @@ clip-path: polygon(0 0, 47% 0, 35% 100%, 0% 100%);
     padding-top: 60px;
     padding-right: 15%;
     height: 100%;
-    
+
 }
 
-.about{
+.about {
     margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.about_text p{
+.about_text p {
     margin-top: 20px;
     width: 35%;
 }
 
-.line{
+.line {
     width: 60px;
     height: 3px;
     margin-top: 20px;
     background-color: black;
 }
 
-.read_button{
+.read_button {
     margin-top: 50px;
     width: 300px;
     height: 50px;
@@ -91,14 +91,123 @@ clip-path: polygon(0 0, 47% 0, 35% 100%, 0% 100%);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px; 
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.15s;
 }
 
-.read_button:hover{
+.read_button:hover {
     background-color: white;
     color: tomato;
     transition: 0.15s;
 }
 
+@media (max-width : 1060px) {
+    .about {
+        font-size: 13px;
+    }
+}
+
+@media (max-width : 960px) {
+    .read_button {
+        width: 200px;
+    }
+}
+
+@media (max-width : 820px) {
+    .about_us {
+        background-size: 120%;
+    }
+
+    .hh {
+        font-size: 30px;
+        margin-rigt: 10px;
+        margin-top: 5px;
+    }
+
+    .about_text {
+        -webkit-clip-path: polygon(0 0, 56% 0, 41% 100%, 0% 100%);
+        clip-path: polygon(0 0, 56% 0, 41% 100%, 0% 100%);
+    }
+    .about_text p {
+        width: 46%;
+    }
+}
+
+@media (max-width : 660px) {
+    .about_text {
+        -webkit-clip-path: polygon(0 28%, 100% 51%, 100% 100%, 0% 100%);
+clip-path: polygon(0 28%, 100% 51%, 100% 100%, 0% 100%);
+
+    }
+    .about_text p {
+        width: 100%;
+    }
+
+    .about_text{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .about_us{
+        background-position: top;
+    }
+
+    .hh{
+        color: black;
+    }
+    
+}
+
+@media (max-width : 490px) {
+    .about_text {
+        -webkit-clip-path: polygon(0 25%, 100% 41%, 100% 100%, 0% 100%);
+clip-path: polygon(0 25%, 100% 41%, 100% 100%, 0% 100%);
+    }
+    .about_text p {
+        width: 100%;
+    }
+
+    .about_text{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .about_us{
+        background-position: top;
+    }
+
+    .hh{
+        color: black;
+    }
+    
+}
+
+@media (max-width : 420px) {
+    .about_text{
+        padding-left: 10px;
+    }
+}
+
+@media (max-width : 380px) {
+    .line{
+        margin-top: 10px;
+    }
+    .about p{
+        margin-top: 10px;
+    }
+    .read_button{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width : 350px) {
+    .about_text{
+        -webkit-clip-path: polygon(0 22%, 100% 31%, 100% 100%, 0% 100%);
+clip-path: polygon(0 22%, 100% 31%, 100% 100%, 0% 100%);
+    }
+}
