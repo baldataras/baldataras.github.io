@@ -399,6 +399,7 @@ a:visited {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .s6{
@@ -412,4 +413,8 @@ a:visited {
 
 .s6 h3{
     font-size: 35px;
+}
+
+.s6 h4{ 
+    margin: 20px;
 }
