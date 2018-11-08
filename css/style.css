@@ -348,6 +348,7 @@ a:visited {
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
+    height: 300px;
 }
 
 .s5 h3{
@@ -400,6 +401,14 @@ a:visited {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+}
+
+h3{
+    color: #333;
+}
+
+.button_head h3{
+    color: white;
 }
 
 .s6{
