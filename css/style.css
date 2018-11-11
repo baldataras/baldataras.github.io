@@ -71,6 +71,20 @@ a.active:hover{
     color: white;
 }
 
+.sections1 .button_head{
+    position: relative;
+    width: 111px;
+    height: 30px;
+    font-size: 2px;
+}
+
+.sections1.active1 .button_head{
+    width: 222px;
+    height: 60px;
+    transition: .7s;
+    font-size: 15px;
+}
+
 .button_head{
     width: 222px;
     height: 60px;
@@ -100,6 +114,9 @@ a.active:hover{
 .fixed-header {
     background-color: #fff;
     color: black;
+    -webkit-box-shadow: 2px 3px 13px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 3px 13px -3px rgba(0,0,0,0.75);
+box-shadow: 2px 3px 13px -3px rgba(0,0,0,0.75);
 }
 
 header a:hover{
@@ -109,6 +126,13 @@ header a:hover{
 
 .sections1 h2{
     font-size: 60px;
+    position: relative;
+    bottom: 100vh
+}
+
+.sections1.active1 h2{
+    bottom: 0;
+    transition: .7s
 }
 
 .sections1 h1{
@@ -376,7 +400,7 @@ a:visited {
 
 .button:hover{
     border-radius: 7px;
-    transition: .1s;
+    transition: .2s;
 }
 
 .work{
@@ -394,6 +418,7 @@ a:visited {
     padding: 20px;
     padding-bottom: 40px;
     color: #333;
+    position: relative;
 }
 
 .works{
@@ -405,6 +430,10 @@ a:visited {
 
 h3{
     color: #333;
+}
+
+.workimg{
+    position: relative;
 }
 
 .button_head h3{
@@ -426,4 +455,39 @@ h3{
 
 .s6 h4{ 
     margin: 20px;
+}
+
+.hov{
+    position: absolute;
+    background-color: #33333300;
+    top: 0;
+    bottom: 0;
+    left: 4px;
+    right: 4px;
+    transition: .2s;
+    color: #33333300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work:hover .workimg .hov{
+    background-color: #33333344;
+    transition: .2s;
+}
+
+.hov i{
+    font-size: 30px;
+    bottom: 43%;
+    position: relative;
+    transition: .2s;
+}
+
+.work:hover .workimg .hov i{
+    bottom: 0;
+    transition: .3s;
+}
+
+.work:hover .workimg .hov i{
+    color: white;
 }

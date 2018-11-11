@@ -28,3 +28,7 @@ $(window).scroll(function(){
       }
     });
   });
+
+  $(document).ready(function () {
+    $('.sections1').addClass('active1')
+  });
