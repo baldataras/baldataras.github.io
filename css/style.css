@@ -122,3 +122,12 @@ body {
     width: 50px;
   }
 }
+
+@media only screen and (max-width: 470px) {
+  * {
+    font-size: 11px;
+  }
+  h2 {
+    width: 150px;
+  }
+}
