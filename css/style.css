@@ -8,9 +8,14 @@
 
 body {
   background-color: rgb(250, 181, 156);
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
 }
 
@@ -20,8 +25,11 @@ body {
   height: 90vh;
   margin-top: 50px;
   margin-bottom: 50px;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
   position: relative;
 }
@@ -31,8 +39,11 @@ body {
   width: 25%;
   background-color: white;
   position: relative;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
 }
 
@@ -63,6 +74,7 @@ body {
 }
 
 .text {
+  -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
   margin-top: 50px;
 }
@@ -74,10 +86,14 @@ body {
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   overflow: hidden;
+  display: -webkit-box;
   display: flex;
+  -webkit-box-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   align-items: center;
 }
 
@@ -93,10 +109,12 @@ body {
   top: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.267);
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
 .head-block:hover .hover .fa {
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   top: 45%;
   margin: auto;
