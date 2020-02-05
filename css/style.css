@@ -59,18 +59,36 @@ body {
   width: 75%;
 }
 
+/* ------ */
+
 #music {
-  background: url(../img/daniel-fontenele-S4KVecxgCDo-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+  position: relative;
 }
 
+#music picture {
+  position: absolute;
+  height: 100%;
+}
+
+#music picture img {
+  height: 100%;
+}
+
+/* ---- */
+
 #film {
-  background: url(../img/jakob-owens-CiUR8zISX60-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#film picture {
+  position: absolute;
+  height: 100%;
+}
+
+#film picture img {
+  height: 100%;
 }
 
 .text {
@@ -141,12 +159,12 @@ body {
   .p {
     width: 200px;
   }
-  #film {
-    background: url(../img/mobimg.jpg);
+  #film picture img {
+    height: 105%;
   }
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 655px) {
   * {
     font-size: 12px;
   }
