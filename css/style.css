@@ -135,11 +135,14 @@ body {
     font-size: 15px;
   }
   .head-block {
-    height: 65vh;
+    height: 60vh;
   }
   .h2,
   .p {
     width: 200px;
+  }
+  #film {
+    background-image: url(../img/mobimg.jpg);
   }
 }
 
@@ -148,7 +151,7 @@ body {
     font-size: 12px;
   }
   .head-block {
-    height: 45vh;
+    height: 40vh;
   }
   .logo {
     width: 50px;
