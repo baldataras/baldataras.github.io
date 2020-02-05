@@ -272,6 +272,8 @@ h1 {
   }
   .logo {
     width: 50px;
+    left: 10px;
+    top: 10px;
   }
   .h2,
   .p {
