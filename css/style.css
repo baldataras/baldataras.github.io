@@ -200,6 +200,10 @@ h1 {
   overflow: hidden;
 }
 
+.content-reverse {
+  flex-direction: row-reverse;
+}
+
 .content:hover .hover-content {
   background-color: rgba(0, 0, 0, 0.267);
   transition: 0.2s;
@@ -252,6 +256,10 @@ h1 {
   .content {
     padding-top: 30px;
     padding-bottom: 30px;
+    flex-direction: column;
+  }
+  .content-txt h2 {
+    margin-top: 20px;
   }
 }
 
@@ -288,6 +296,10 @@ h1 {
   .content {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  .content-img {
+    width: 45%;
   }
 }
 
