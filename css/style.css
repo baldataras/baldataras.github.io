@@ -142,7 +142,7 @@ body {
     width: 200px;
   }
   #film {
-    background-image: url(../img/mobimg.jpg);
+    background: url(../img/mobimg.jpg);
   }
 }
 
