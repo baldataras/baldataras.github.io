@@ -154,6 +154,85 @@ body {
   text-align: center;
 }
 
+header {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+}
+
+.alogo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.content {
+  padding-top: 100px;
+  width: 100%;
+  height: 60vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: content-box;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.hover-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.content:hover .hover-content {
+  background-color: rgba(0, 0, 0, 0.267);
+  transition: 0.2s;
+}
+
+.content-img {
+  width: 30%;
+}
+
+.content-txt {
+  line-height: 30px;
+  z-index: 2;
+}
+
+.hover-content .fa {
+  position: absolute;
+  top: -100px;
+  transition: 0.2s;
+}
+
+.content:hover .hover-content .fa {
+  top: 45%;
+  transition: 0.2s;
+}
+
+.content-txt h2 {
+  margin-bottom: 20px;
+}
+
+.reverse {
+  text-align: right;
+}
+
 @media only screen and (max-width: 950px) {
   * {
     font-size: 15px;
@@ -167,6 +246,13 @@ body {
   }
   #film picture img {
     height: 105%;
+  }
+  .content-txt {
+    line-height: 20px;
+  }
+  .content {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -184,6 +270,25 @@ body {
   .p {
     width: 150px;
     margin: 5px;
+  }
+  .content-txt {
+    line-height: 15px;
+  }
+  h1 {
+    width: 50%;
+    margin-left: 50px;
+  }
+
+  header {
+    justify-content: flex-start;
+  }
+  .content-txt h2 {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .content {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
