@@ -64,6 +64,9 @@ body {
 #music {
   overflow: hidden;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #music picture {
@@ -80,6 +83,9 @@ body {
 #film {
   overflow: hidden;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #film picture {
