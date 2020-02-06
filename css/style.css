@@ -214,6 +214,11 @@ h1 {
 
 .content-img {
   width: 30%;
+  height: 30vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content-txt {
