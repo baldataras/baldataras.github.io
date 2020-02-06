@@ -90,11 +90,14 @@ body {
 
 #film picture {
   position: absolute;
-  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #film picture img {
-  height: 100%;
+  width: 35%;
 }
 
 .text {
@@ -215,6 +218,7 @@ h1 {
 
 .content-txt {
   line-height: 30px;
+  position: relative;
 }
 
 .hover-content .fa {
@@ -234,6 +238,78 @@ h1 {
 
 .reverse {
   text-align: right;
+}
+
+.button-read {
+  width: 150px;
+  height: 40px;
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+.button-read:hover {
+  background-color: rgb(22, 22, 22);
+  transition: 0.2s;
+}
+
+.button-read:hover a p {
+  color: white;
+  transition: 0.2s;
+}
+
+.button-content {
+  display: flex;
+  width: inherit;
+  justify-content: flex-start;
+}
+
+.b-reverse {
+  justify-content: flex-end;
+}
+
+.button-read a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.content-main {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 80px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.content-main h2 {
+  font-size: 30px;
+}
+
+.content-main p {
+  width: 70%;
+  margin-top: 90px;
+  line-height: 30px;
+}
+
+.content-main img {
+  margin-top: 60px;
+  width: 70%;
 }
 
 @media only screen and (max-width: 950px) {
