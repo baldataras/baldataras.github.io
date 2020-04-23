@@ -106,6 +106,7 @@ body {
   margin-top: 50px;
 }
 
+<<<<<<< HEAD
 .head-block .hover {
   position: absolute;
   left: 0;
@@ -155,6 +156,107 @@ body {
   align-items: center;
   margin: 15px;
   text-align: center;
+=======
+/* HEADER + NAV */
+.wrapper {
+    background-image: url('../img/c5a5f92b530de2cf2c18e917c8a51ac60cb6.jpg');
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    width: 100%;
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+img {
+
+    max-width: 100%;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    color: #fff;
+    transition: all 2s;
+}
+
+nav {
+    padding: 15px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+
+    padding: 10px;
+
+}
+
+.fixed-header a {
+    color: black;
+}
+
+a.active {
+    background-color: #f34236;
+    color: white;
+}
+
+a.active:hover{
+    color: white;
+}
+
+.button_head{
+    width: 222px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f34236;
+    border-radius: 30px;
+    margin-top: 50px;
+    transition: .1s;
+}
+
+.button_head:hover{
+    border-radius: 10px;
+    transition: .1s;
+}
+
+.fixed-header a.active:hover {
+    color: black;
+}
+
+.left {
+    margin-right: auto;
+    font-size: 22px;
+}
+
+.fixed-header {
+    background-color: #fff;
+    color: black;
+}
+
+header a:hover{
+    color: #f34236;
+
+}
+
+.sections1 h2{
+    font-size: 60px;
+>>>>>>> parent of 88031b9... port5
 }
 
 header {
@@ -317,6 +419,7 @@ h1 {
   width: 70%;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 950px) {
   * {
     font-size: 15px;
@@ -390,4 +493,58 @@ h1 {
   * {
     font-size: 11px;
   }
+=======
+.button:hover{
+    border-radius: 7px;
+    transition: .1s;
+}
+
+.work{
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    width: 30%;
+    box-shadow: rgba(58,78,95,0.2) 0 10px 16px, rgba(58,78,95,0.05) 0 -5px 16px;
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+    padding: 20px;
+    padding-bottom: 40px;
+    color: #333;
+}
+
+.works{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h3{
+    color: #333;
+}
+
+.button_head h3{
+    color: white;
+}
+
+.s6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.s6 h3{
+    font-size: 35px;
+}
+
+.s6 h4{ 
+    margin: 20px;
+>>>>>>> parent of 88031b9... port5
 }
